@@ -13,7 +13,7 @@ st.set_page_config(
 # ── Load data ──────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\mroni\OneDrive\Documents\Assessment3_Task2\data\global-data-on-sustainable-energy.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/roniz29/energy-dashboard/main/global-data-on-sustainable-energy.csv")
     # Remove non-country aggregates
     remove = ["World", "Asia", "Europe", "Africa", "Americas",
               "North America", "South America", "European Union",
